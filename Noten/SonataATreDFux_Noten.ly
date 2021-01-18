@@ -17,8 +17,13 @@ tempTranspose = #(define-music-function (parser location music)
                           (to (ly:make-pitch octave note alteration)))
                      #{ \transpose c c  $music #}))
 
-mBreak = { \break }
+mBreak = { 
+  \break 
+}
 
+ablaufzeileSonataATreDFux = {
+  
+}
 
 globalSonataATreDFux = {
   \taktstil
@@ -31,6 +36,7 @@ globalSonataATreDFux = {
 globalGraveSonataATreDFux = {
   \time 3/2
   \tempo "Grave"
+  \bar "||"
 }
 
 globalPrestoSonataATreDFux = {
@@ -459,6 +465,71 @@ orgelLHNotenSonataATreDFux = \tempTranspose \relative c {
   d8 g a4 d,8 fis g4 |
   fis4 r r8 fis g g |
   fis g a4 d,4 r \bar "|."
+}
+
+bezifferungSonataATreDFux = \figuremode {
+  \globalSonataATreDFux
+  s2 <[6]>8 s <[6]> <[6 4]> |
+  s8 s s <[6]> s4 s8 <[6]> |
+  <[6]>4 s8 <[6]> <[6]> s8 s4 |
+  <[5 2]>2 <[6]>4 <[6]> |
+  <[6 4]>8 <[5 3]> s8 <[6]> s4 s8 <[6]> |
+  s4 <[7]>8 <[6]> s8 s s4 |
+  s8 s <_-> <[6]> s4 s8 s |
+  s8 <[7]> <[4]> <[3]> s4 s8 <[6]> |
+  s4 s8 <[6]> s8 s <[7]> <[6 4]> |
+  <[6 4]> s8 s8 <[6]> s8 s s <[6]> |
+  <[_+]>8 s <[4]> <[_+]> s4 s |
+  s2 <[6 4]>8 s8 s8 s |
+  s8 <[3]> q q q q s <[6]> |
+  s4 <[_-]>4 <[9]> <[6]> |
+  q q q s4 |
+  <[6]>8 s s <[6]> s4 s |
+  s8 s s4 <[2]> <[6 5]> |
+  s4 <[6-]>8 s s8 s s8. <[6]>16 |
+  <[6 4]>8 s8 s <[6]> s <[_-]> s <[6]> |
+  <[7 _+]>4 <[6 4]>8 <[5 3]> <[_!]>4 <[6-]>8 <[_-]> |
+  <[7-]>4 s8 <[6]> <[7 _+]>4 <[6 4]> |
+  <[4]> <[_+]> <[_+]>2 |
+  \globalGraveSonataATreDFux
+  <[_-]>2 s2. s4 |
+  <[6]>1 s4 <[6-]> |
+  <[6]>2 <[7 _-]>2. <[6 _-]>4 |
+  s1 s4 <[6]>
+  <_->1 <[_-]>2 |
+  <[6]>2 <[7]>2. <[6]>4 |
+  \bassFigureExtendersOn
+  <_+>1 q2 |
+  <[6]>2 <[_-]>1 |
+  <[6]>2 <[_-]>1 |
+  s2 <[7]> <[6]> |
+  s1 <[6]>2 |
+  s2 <[2]> s |
+  <[6]> <[7]> \bassFigureExtendersOff <[6]> |
+  <[6]> <[7]> s2 |
+  <[_-]>2. <[6]>4 s4 <[6]> |
+  <[6]> s4 <[4]>2. <[3]>4 |
+  s1 <[6]>2 |
+  <[_-]>4 <[3]>4 q <[7 3]> s2 |
+  <[6]> <[7]>2. <[6]>4 |
+  \globalPrestoSonataATreDFux
+  <_+>4 s2. |
+  s1*3 |
+  s4 s4 s8 <[6]>8 <[9 7]> s8 |
+  <[7]>8 <[6]> q <[2]>4 s8 <[7]> <[6]> |
+  <[6]>4 <[7]>8 <[6]> s8 s s8 <[6]> |
+  <[2]> <[6]> <[4]> <[3]> s4. s8 |
+  <[6 4]>8 s <[2]>2 <[6]>4 |
+  <[7]> <[6]> <[2]>8 <[3]> <[6]>4 |
+  s1 |
+  s |
+  s |
+  s |
+  s2 s4 <7>8 s |
+  <7> <6> q <3> <4 2> s8 <7> <6> |
+  <6>8 s8 s4 <[6]>8 s s4 |
+  s4 <[_-]> s <[6]> |
+  s4  <[4 2]> <7>8 <6> <4 2-> s |
 }
 
 metronomZeileSonataATreDFux = \drummode {
